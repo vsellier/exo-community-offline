@@ -7,13 +7,15 @@ On a server havine internet access :
 
 ### Customize the installation
 
-Clone the repository or preprare your own ``Dockerfile`` with the list of addons to install
+#### Via the example
+Clone the repository
 ```
 # git clone https://github.com/vsellier/exo-community-offline.git
 # cd exo-community-offline
 ```
-and customze the ``Dockerfile`` file
-or
+and customize the ``Dockerfile`` file to install your specific addons
+
+#### From scratch
 
 ```
 # mkdir exo-community-offline
@@ -25,6 +27,7 @@ FROM exoplatform/exo-community:5.0
 
 RUN ./addon install <addon>
 RUN ./addon install <addon>
+...
 ```
 
 ### Build the image
